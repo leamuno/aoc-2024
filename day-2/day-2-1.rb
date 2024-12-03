@@ -6,7 +6,7 @@ def is_safe(report)
   report.each_cons(2).all? { |a, b| (1..3).include?((b - a).abs) }
 end
 
-File.open("./input.txt").each do |line|
+File.open("day-2/input.txt").each do |line|
   report = line.split(" ").map(&:to_i)
 
   count += 1 if is_safe(report)

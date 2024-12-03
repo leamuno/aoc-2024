@@ -17,7 +17,7 @@ def use_dampener(report)
   false
 end
 
-File.open("./input.txt").each do |line|
+File.open("day-2/input.txt").each do |line|
   report = line.split(" ").map(&:to_i)
 
   count += 1 if use_dampener(report)
