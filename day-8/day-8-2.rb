@@ -1,3 +1,3 @@
-data = File.read("day-5/input.txt")
+data = File.read("day-8/input.txt")
 
 puts data
